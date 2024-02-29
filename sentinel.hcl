@@ -1,6 +1,4 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
-policy "allowed-terraform-version" {
-  enforcement_level = "soft-mandatory"
+policy "cis_security_group_policy" {
+  source  = "./cis_security_group_policy.sentinel"
+  enforcement_level = "hard-mandatory"
 }
